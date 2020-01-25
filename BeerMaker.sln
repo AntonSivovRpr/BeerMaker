@@ -3,9 +3,40 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jobs", "Jobs", "{4CF0236E-B305-41AF-8DB7-7DC6120094E9}"
+	ProjectSection(SolutionItems) = preProject
+		BeerMaker.Jobs.Process\BeerMakerCoreJob.cs = BeerMaker.Jobs.Process\BeerMakerCoreJob.cs
+		BeerMaker.Jobs.Process\ScheduledWork.cs = BeerMaker.Jobs.Process\ScheduledWork.cs
+		BeerMaker.Jobs.Process\TopshelfLifetime.cs = BeerMaker.Jobs.Process\TopshelfLifetime.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerMaker.Jobs.Process", "BeerMaker.Jobs.Process\BeerMaker.Jobs.Process.csproj", "{9BA3B609-58A0-4A87-8597-51DD5E24F6B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{0C65FC58-6C66-4350-88A6-78E8AA5605B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerMaker.Core.Models", "BeerMaker.Core.Models\BeerMaker.Core.Models.csproj", "{B3AE6815-ED6D-4F9A-A9BB-10EF27AE4775}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BA3B609-58A0-4A87-8597-51DD5E24F6B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA3B609-58A0-4A87-8597-51DD5E24F6B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA3B609-58A0-4A87-8597-51DD5E24F6B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA3B609-58A0-4A87-8597-51DD5E24F6B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3AE6815-ED6D-4F9A-A9BB-10EF27AE4775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3AE6815-ED6D-4F9A-A9BB-10EF27AE4775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3AE6815-ED6D-4F9A-A9BB-10EF27AE4775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3AE6815-ED6D-4F9A-A9BB-10EF27AE4775}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9BA3B609-58A0-4A87-8597-51DD5E24F6B7} = {4CF0236E-B305-41AF-8DB7-7DC6120094E9}
+		{B3AE6815-ED6D-4F9A-A9BB-10EF27AE4775} = {0C65FC58-6C66-4350-88A6-78E8AA5605B7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F997A64-E0BA-4101-A80B-42439435F21C}

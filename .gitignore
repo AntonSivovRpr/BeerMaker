@@ -1,2 +1,14 @@
 
 _ReSharper.Caches/
+
+.vs/
+
+publish/
+
+BeerMaker.Jobs.Process/bin/
+
+BeerMaker.Jobs.Process/obj/
+
+BeerMaker.Core.Models/bin/
+
+BeerMaker.Core.Models/obj/
